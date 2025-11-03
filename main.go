@@ -1,17 +1,21 @@
 package main
 
 import (
-	"fmt"
-	"log"
-	"net/http"
+	"example.com/backend"
 )
 
-func helloWorld(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Hello World\n")
-}
+//func helloWorld(w http.ResponseWriter, r *http.Request) {
+//	fmt.Fprintf(w, "Hello World\n")
+//}
+
+//func main() {
+//	http.HandleFunc("/", helloWorld)
+//	fmt.Println("Server started and listening on localhost:9003")
+//	log.Fatal(http.ListenAndServe(":9003", nil))
+//}
 
 func main() {
-	http.HandleFunc("/", helloWorld)
-	fmt.Println("Server started and listening on localhost:9003")
-	log.Fatal(http.ListenAndServe(":9003", nil))
+
+backend.Run(":9003")
+
 }

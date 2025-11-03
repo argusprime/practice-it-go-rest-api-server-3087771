@@ -1,5 +1,9 @@
 package main
 
+import(
+	"example.com/pratice"
+)
+
 func main() {
-	pratice.test()
+	pratice.Test()
 }
