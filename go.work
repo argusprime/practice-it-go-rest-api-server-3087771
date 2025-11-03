@@ -1,6 +1,3 @@
-use (
-	.
-	./backend
-	./pratice
-	./tester
-)
+go 1.18
+
+use .
